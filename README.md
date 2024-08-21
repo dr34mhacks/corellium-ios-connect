@@ -14,6 +14,11 @@ Working with iOS devices in Corellium often requires a specific setup on a Linux
 - **User Interaction**: Prompts the user for the IP address of the Corellium host and configures `usbfluxd` to connect to the specified remote instance.
 - **Diagnostic Tools**: Includes checks for device detection and service status, helping users troubleshoot any issues.
 
+## Prerequisite
+
+- iOS device must be connected via openvpn.
+- IP address of corellium host (could be found at **Connect** tab of corellium or Wifi setting of iOS application)
+
 ## Installation
 
 1. **Clone the Bash file**:
@@ -31,6 +36,18 @@ Working with iOS devices in Corellium often requires a specific setup on a Linux
     ```bash
     sudo ./corellium-ios-connect-fix.sh
     ```
+
+### Running the script
+
+<img width="1496" alt="image" src="https://github.com/user-attachments/assets/6181ad55-74bb-481a-b1c1-31434ed38c79">
+
+### Provided IP address when prompted:
+
+<img width="1496" alt="image" src="https://github.com/user-attachments/assets/dc46710c-84f7-45b3-bec4-2523bba806e8">
+
+### Enumerating Frida Processes on corellium iOS device
+
+<img width="1496" alt="image" src="https://github.com/user-attachments/assets/60dbea9b-d149-4666-958b-dab957ee4e80">
 
 ## Working
 
